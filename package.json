@@ -1,11 +1,11 @@
 {
-  "name": "lsca",
+  "name": "Downtime.NYC",
   "version": "1.0.0",
-  "description": "RESRful for live speed camera alert",
+  "description": "RESRful for downtime.NYC",
   "main": "index.js",
   "scripts": {
     "test": "Hello World",
-    "start": "nodemon moneyhitz.js"
+    "start": "nodemon downtime.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
+    "ejs": "^2.6.1",
     "express": "^4.16.2",
     "generate-password": "^1.4.0",
     "jsonwebtoken": "^8.1.1",

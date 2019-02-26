@@ -5,34 +5,49 @@
  */
 
 var config = {
-    port: process.env.PORT || 4040,
-    database : 'mongodb://localhost:27017/camera_alert',
-	//database: "mongodb://mongoAdminBIT:BiT~2016^MdB@localhost:27017/fencal?authSource=admin",
+    port: process.env.PORT || 4044, //3000
+    database : "mongodb://localhost:27017/downtimenyc",
     /*database : {
         username: "mongoAdminBIT",
-        password: "BiT~2016^MdB",
+        password: "BiT^7129~jsQ​-P",
         authDb: "admin",
         port: 27017,
         host: "127.0.0.1",
-		//host: "localhost",
-        dbName: "fencal"
+        dbName: "downtimenyc"
+    },*/
+    /*database : {
+        username: "barbarakaresapp",
+        password: "barbara963789",
+        authDb: "admin",
+        port: 27017,
+        host: "127.0.0.1",
+        dbName: "downtimenyc"
     },*/
     secret : 'Afv2ilj0iaT1@sB6r345-ipn0ilu9maI-Tn2n9eR',
     dev_mode : true,
-    //__site_url: 'http://162.243.110.92:3131/',
-    __site_url: 'http://localhost:4040/',
-    __admin_url: 'http://localhost:4200/',
-	appUrlAndroid: 'http://play.google.com',
-    appUrliOS: 'http://play.google.com',
+    // __site_url: 'http://162.243.110.92:4000/', /* API URL */
+    // __admin_url: 'http://162.243.110.92/tanmay/barbarakares/admin/', /* Admin URL */
+    // __image_url: 'http://162.243.110.92/tanmay/barbarakares/service/assets/images/', /* IMAGE URL */
+    
+    __site_url: 'http://localhost:4044/',
+    __admin_url: 'http://localhost:4400/',
+    __image_url: '/images',
+
+    __image_url: '/images',
+    appUrlAndroid: 'http://play.google.com',
+    appUrliOS: 'https://itunes.apple.com',
     email: {  
         host: 'smtp.gmail.com',
         user: 'pritamghosh8191@gmail.com',
-        pass: 'Pritam@123',
+        pass: 'Pritam@brainium17',
+        // user: 'souravs.brainium@gmail.com',
+        // pass: 'brainium#789',
         adminEmail: 'pritamghosh.brainium@gmail.com',
-        port: 587,
-        service: 'gmail'
+        port: 465,
+        service: 'gmail',
+        fromName: 'Downtime.NYC'
     },
-     status: {
+    status: {
         OK: 200,
         CREATED: 201,
         FOUND: 302,
@@ -45,11 +60,20 @@ var config = {
         SERVER_ERROR: 500,
         NO_SERVICE: 503
     },
-    push:{
-        requestUrl: 'https://api.ionic.io/push/notifications',
-        profileName: 'work_production',
-        apiKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJjNGNhZGRjNy1jOTU2LTQ4NDMtYTg4OC1mN2MwNmEwNDRhZmEifQ.G3JvWeNd0DykXwIggmQwgK9gtKMXzwLI5zewnvY4miU'   
-    }
+    push: {
+        android: {
+            serverKey: 'AAAAlUH2sFo:APA91bEsQR4F1YP7qkean6e5Sf87CCLR9JwXxjNGT9e9yuZPnbaPOakGSdm4l8FiRYORApq5tDMS3ZyEHuvkOu4l4Vy9HSCnIgb9_Eh7b5fWBGBkPLu_M-SLho2maiA-bm8qcIijazVJ'
+        },
+        iOS: {
+            path: './AuthKey_ZF284GX2JB.p8',
+            keyId: 'ZF284GX2JB',
+            teamId: '36UDYZABZ2'
+        }
+    },
+    default: {
+        role: 'user'
+    },
+    package: 'com.downtimenyc.app'
 };
 module.exports = config;
 
