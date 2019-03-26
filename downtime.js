@@ -39,7 +39,7 @@ app.use(function(req, res, next) {
         req.url == '/' 
         || req.url == '/login' 
         || req.url == '/forgot_password' 
-        || req.url == '/email_verify' 
+        || req.url == '/email_validate' 
         || req.url == '/users'
       ) {
     next();
