@@ -1,11 +1,11 @@
 {
-  "name": "Downtime.NYC",
+  "name": "MyProject.NYC",
   "version": "1.0.0",
-  "description": "RESRful for downtime.NYC",
+  "description": "RESRful for MyProject",
   "main": "index.js",
   "scripts": {
     "test": "Hello World",
-    "start": "nodemon downtime.js"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",

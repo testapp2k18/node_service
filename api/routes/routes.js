@@ -8,8 +8,8 @@ module.exports = function(app) {
         .get(user.all_users);
 
 
-    app.route('/email_validate')
-        .post(user.email_validate);
+    app.route('/email-verify')
+        .post(user.email_verify);
 
     app.route('/user/:userId?')
         .post(user.add_user)

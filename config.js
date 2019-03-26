@@ -6,14 +6,14 @@
 
 var config = {
     port: process.env.PORT || 4000, //3000
-    database : "mongodb://localhost:27017/downtimenyc",
+    database : "mongodb://localhost:27017/projectDB",
     /*database : {
         username: "mongoAdminBIT",
         password: "BiT^7129~jsQ​-P",
         authDb: "admin",
         port: 27017,
         host: "127.0.0.1",
-        dbName: "downtimenyc"
+        dbName: "projectDB"
     },*/
     /*database : {
         username: "barbarakaresapp",
@@ -21,7 +21,7 @@ var config = {
         authDb: "admin",
         port: 27017,
         host: "127.0.0.1",
-        dbName: "downtimenyc"
+        dbName: "projectDB"
     },*/
     secret : 'Afv2ilj0iaT1@sB6r345-ipn0ilu9maI-Tn2n9eR',
     dev_mode : true,

@@ -61,7 +61,7 @@ exports.add_user = function(req, res) {
         template: 'email_template',
         context: {
             name: user.first_name,
-            url: config.__admin_url+'#/email_validate/' + user.access_token, //#/
+            url: config.__admin_url+'#/email-verify/' + user.access_token, //#/
             base_url: config.__site_url,
             image_url: config.__image_url
         }
@@ -79,7 +79,7 @@ exports.add_user = function(req, res) {
   });
 };
 
-exports.email_validate = function(req, res){
+exports.email_verify = function(req, res){
 
   var access_token = req.body.access_token;
 
